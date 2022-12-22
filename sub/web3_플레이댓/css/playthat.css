@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GowunDodum-Regular';
+}
+
+body{
+    background-color: #f37032;
+    line-height: 1.3;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+section h2{
+    font-size: 65px;
+}
+
+section h3{
+    font-size: 35px;
+}
+
+section h4{
+    font-size: 26px;
+}
+
+section p{
+    font-size: 20px;
+}
+
+header{
+    width: 1800px;
+    height: 100px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+header .left{
+    display: flex;
+}
+
+header .left li{
+    padding-right: 78PX;
+}
+
+header .left li a{
+    color: #fff;
+}
+
+header .left > li:hover > a{
+    color: #fffaac;
+}
+
+header .right{
+    display: flex;
+}
+
+header .right li{
+    padding-right: 38px;
+}
+
+header .right li a{
+    color: #fff;
+}
+
+header .right li:hover a{
+    color: #fffaac;
+}
+header .left .deth01{
+    position: relative;
+}
+
+header .left .deth01 .deth02{
+    background-color: #f37032;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+
+header .left .deth01:hover .deth02{
+    display: inline;
+}
+
+/* main visual */
+.main_v{
+    width: 1440px;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_v .title{
+    margin-top: 100px;
+}
+.main_v .title h2{
+    color: #fffaac;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 13px;
+}
+
+.main_v .title .down{
+    margin-top: 33px;
+}
+
+.main_v .title .down h3{
+    font-weight: 600;
+    color: #234300;
+    margin-bottom: 25px;
+}
+
+/* cont01 */
+
+.cont01{
+    width: 1440px;
+    margin: 280px auto;
+}
+.cont01 .info h3{
+    margin-bottom: 8px;
+}
+
+.cont01 .info p{
+    position: relative;
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cont01 .list01{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont01 .list01 .info{
+    text-align: right;
+}
+
+.cont01 .list01 .info h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cont01 .list01 .info p::before{
+    content: '';
+    width: 810px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 15px;
+    border-bottom: 2px solid #fff;
+    top:55px;
+    left: -260px;
+}
+
+.cont01 .list02{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont01 .list02 h2{
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+.cont01 .list02 .info p::before{
+    content: '';
+    width: 810px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 15px;
+    border-bottom: 2px solid #fff;
+    top:55px;
+    left: 0;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos]{
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+/* cont02 */
+.cont02{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.cont02 img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont02 .info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.557);
+    color: #fff;
+    padding: 247px 0;
+    padding-left: 50px;
+}
+
+.cont02 .info h3{
+    margin-bottom: 15px;
+}
+
+.cont02 .info p{
+    line-height: 1.5;
+}
+
+/* cont03 */
+.cont03{
+    width: 1440px;
+    margin: 200px auto;
+}
+
+.cont03 .title{
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.cont03 .title h2{
+    margin-bottom: 10px;
+}
+
+.cont03 .title h4{
+    font-weight: 500;
+}
+
+.cont03 .list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont03 .list .item{
+    position: relative;
+    overflow: hidden;
+}
+
+.cont03 .list .item::after{
+    top: 0;
+    left: 0;
+    position: absolute;
+    content:'';
+    display: inline-block;
+    width: 0px;
+    border-top: 7px solid #fffaac;
+    transition: 0.5s;
+}
+
+.cont03 .list .item:hover::after{
+    top: 0;
+    left: 0;
+    position: absolute;
+    content:'';
+    display: inline-block;
+    width: 200px;
+    border-top: 7px solid #fffaac;
+}
+
+.cont03 .list .item .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.cont03 .list .item .info{
+    position: absolute;
+    width: 339px;
+    height: 433px;
+    background-color: rgba(51, 51, 51, 0.568);
+    color: #fff;
+    top: 800px;
+    left: 0;
+    text-align: center;
+    padding-top: 200px;
+    transition: 0.5s;
+}
+
+.cont03 .list .item .info h4{
+    margin-bottom: 10px;
+    color:#fffaac;
+}
+
+.cont03 .list .item:hover .info{
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: right;
+    padding-bottom: 0;
+}
+
+footer .fot{
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .fot div{
+    margin-bottom: 15px;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer .last p a:hover{
+    text-decoration: underline;
+}
+
+footer h3{
+    margin-bottom: 5px;
+}
